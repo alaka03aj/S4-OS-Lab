@@ -6,7 +6,7 @@ KTU S4 OS Lab Programs (2019 Scheme)
 
 ## [Cycle-2](https://github.com/alaka03aj/S4-OS-Lab/tree/main/Cycle-2)
 ### 2. System calls of Linux operating system
-A) Simulation of opendir, closedir, readdir
+A) Simulation of opendir, closedir, readdir/n
 B) Simulation of fork()
 
 ### 3. Simulation of Linux commands
