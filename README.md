@@ -1,5 +1,5 @@
 # S4-OS-Lab
-KTU S4 OS Lab Programs (2019 Scheme)
+#### KTU S4 OS Lab Programs (2019 Scheme)
 
 ## [Cycle-1](https://github.com/alaka03aj/S4-OS-Lab/tree/main/Cycle-1)
 ### 1. Basic Linux commands and Shell programming
