@@ -20,3 +20,10 @@ A) Check whether a number is odd or not <br />
 B) Check whether a year is leap year or not <br />
 C) Find factorial of a number <br />
 D) Swap two numbers <br />
+
+### 5. CPU Scheduling Algorithms
+A) Priority Scheduling
+
+## [Cycle-4](https://github.com/alaka03aj/S4-OS-Lab/tree/main/Cycle-4)
+18
+### 6. Producer Consumer Problem using Semaphores
