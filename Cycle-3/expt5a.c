@@ -5,11 +5,10 @@
 
 struct process{
 	int burstTime, waitTime, priority, no;
-}p[20];
+}p[20],temp;
 
 int main(){
 	int n, totalWait = 0, totalTurn = 0;
-	int temp;
 	printf("Enter number of process: ");
 	scanf("%d",&n);
 	//reading process related data
@@ -24,18 +23,9 @@ int main(){
 	for (int i=0; i<n; i++){
 		for (int j=0; j<n-i-1; j++){
 			if (p[j].priority > p[j+1].priority){
-				//exchanging burst time
-				temp = p[j].burstTime;
-				p[j].burstTime = p[j+1].burstTime;
-				p[j+1].burstTime = temp;
-				//exchanging pno
-				temp = p[j].no;
-				p[j].no = p[j+1].no;
-				p[j+1].no = temp;
-				//exchanging priority
-				temp = p[j].priority;
-				p[j].priority = p[j+1].priority;
-				p[j+1].priority = temp;
+				temp = p[j];
+				p[j] = p[j+1];
+				p[j+1] = temp;
 			}
 		}
 	}
