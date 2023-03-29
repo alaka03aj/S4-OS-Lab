@@ -5,7 +5,7 @@
 #define size 10
 
 int mutex = 1;		//value shared by the process
-int full=0, empty = size; x = 0;
+int full=0, empty = size, x = 0;
 
 int wait(int s){
 	return --s;
