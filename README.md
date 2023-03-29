@@ -25,5 +25,4 @@ D) Swap two numbers <br />
 A) Priority Scheduling
 
 ## [Cycle-4](https://github.com/alaka03aj/S4-OS-Lab/tree/main/Cycle-4)
-18
 ### 6. Producer Consumer Problem using Semaphores
