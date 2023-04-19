@@ -27,6 +27,7 @@ void main(){
 	for (int i=0; i<np; i++){
 		for (int j=0; j<nb; j++){
 			if (mem_block[j] >= size[i] && available[j]!=0){
+				printf("Process %d allocated to memeory size %d\n", i+1, mem_block[j]);
 				mem_block[j] -= size[i];
 				available[j] = 0;
 				size[i] = 0;
@@ -35,9 +36,6 @@ void main(){
 		}
 	}
 	
-	printf("Memory Block after allocation\n");
-	for (int i=0; i<nb; i++)
-		printf("%d\n", mem_block[i]);
 	for (int i=0; i<np; i++){
 		if (size[i] != 0){
 			printf("Process of size %d was not allocated to memory!\n", size[i]);
