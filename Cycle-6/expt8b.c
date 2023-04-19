@@ -38,18 +38,15 @@ void main(){
 		}
 			
 		if (available[index] == 1){
+			printf("Process %d allocated to memeory size %d\n", i+1, mem_block[index]);
 				mem_block[index] -= size[i];
 				available[index] = 0;
 				size[i] = 0;
 		}
 	}
-	
-	printf("Memory Block after allocation\n");
-	for (i=0; i<nb; i++)
-		printf("%d\n", mem_block[i]);
 	for (i=0; i<np; i++){
 		if (size[i] != 0){
-			printf("Process of size %d was not allocated to memory!\n", size[i]);
+			printf("Process %d was not allocated to memory!\n", i+1);
 		}
 	}
 }
